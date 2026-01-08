@@ -27,7 +27,7 @@ You can install the libraries with one command:
 ```bash
 pip install customtkinter pyperclip pyinstaller
 ```
-**And now just build it with this:**
+**And now simply build it**
 
 **Windows :**
 ```
