@@ -9,6 +9,8 @@ I got tired of using online converters just to decode a simple string. It's a cl
 * **Clipboard Button:** Copies the result instantly.
 * **Standalone:** Runs as a single `.exe` file.
 
+** Note for Windows Users: Because this app is built by a small lone dev and not signed with a corporate certificate, Windows Defender might show a "Unknown Publisher" popup simply ignore it as I am not coughing up dollars for a python app. **
+
 ## How to use it
 **Option 1:** Download `decoder.exe` from the Releases tab and run it.
 
@@ -24,3 +26,11 @@ I got tired of using online converters just to decode a simple string. It's a cl
 You can install the libraries with one command:
 ```bash
 pip install customtkinter pyperclip pyinstaller
+```
+**And now just build it with this:**
+```(Windows)
+* `python -m PyInstaller --noconsole --onefile --collect-all customtkinter --collect-all pyperclip --icon=myicon.ico --add-data "myicon.ico;." decoder.py`
+```
+```(Linux)
+* `python3 -m PyInstaller --noconsole --onefile --collect-all customtkinter --collect-all pyperclip --icon=myicon.ico --add-data "myicon.ico:." decoder.py`
+```
