@@ -31,10 +31,10 @@ pip install customtkinter pyperclip pyinstaller
 
 **Windows :**
 ```
-* `python -m PyInstaller --noconsole --onefile --collect-all customtkinter --collect-all pyperclip --icon=myicon.ico --add-data "myicon.ico;." decoder.py`
+python -m PyInstaller --noconsole --onefile --collect-all customtkinter --collect-all pyperclip --icon=myicon.ico --add-data "myicon.ico;." decoder.py
 ```
 
 **Linux :**
 ```
-* `python3 -m PyInstaller --noconsole --onefile --collect-all customtkinter --collect-all pyperclip --icon=myicon.ico --add-data "myicon.ico:." decoder.py`
+python3 -m PyInstaller --noconsole --onefile --collect-all customtkinter --collect-all pyperclip --icon=myicon.ico --add-data "myicon.ico:." decoder.py
 ```
